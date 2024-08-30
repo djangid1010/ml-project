@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Flare Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/prediction-styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Solar Flare Prediction</h1>
+    </header>
+    <main>
+        <section id="prediction-form">
+            <div class="content">
+                <h2>Enter Data for Prediction</h2>
+                <form action="{{ url_for('predict') }}" method="post">
+                    <div class="form-group">
+                        <label for="time">Time (in seconds):</label>
+                        <input type="number" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="xray_flux">X-ray Flux:</label>
+                        <input type="number" id="xray_flux" name="xray_flux" step="any" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Predict Solar Flare</button>
+                </form>
+            </div>
+        </section>
+        <section id="prediction-result">
+            {% if prediction is not none %}
+            <div class="result-content">
+                <h2>Prediction Result</h2>
+                <p>The predicted flare status is: <strong>{{ prediction }}</strong></p>
+            </div>
+            {% endif %}
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Solar Flare Forecasting Project</p>
+    </footer>
+</body>
+</html>

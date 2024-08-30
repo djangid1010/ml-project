@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('../images/space-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1c1c1c;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 2px solid #ff4500;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 69, 0, 0.8), 0 0 10px rgba(255, 165, 0, 0.5);
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#prediction-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#prediction-form h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-group input {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn {
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.5);
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 69, 0, 0.7);
+}
+
+#prediction-result {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#prediction-result h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#prediction-result p {
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}

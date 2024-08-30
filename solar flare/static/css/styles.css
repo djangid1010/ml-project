@@ -1,0 +1,434 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('../images/space-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1c1c1c; /* Dark background to match the control room ambiance */
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 2px solid #ff4500; /* Vibrant border to accentuate the header */
+}
+
+header h1 {
+    color: #ffffff; /* White text for strong contrast */
+    font-size: 48px; /* Large, bold font for prominence */
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 69, 0, 0.8), 0 0 10px rgba(255, 165, 0, 0.5); /* Glowing text effect */
+    margin: 0;
+    transition: text-shadow 0.3s ease;
+}
+
+header h1:hover {
+    text-shadow: 0 0 20px rgba(255, 69, 0, 1), 0 0 15px rgba(255, 165, 0, 0.7); /* Enhanced glow on hover */
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+main {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Container for the introduction section */
+.intro-section {
+    display: flex; /* Flexbox to align items horizontally */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Align items vertically centered */
+    padding: 60px 80px; /* Adjust padding for space around the content */
+    background-color: #000; /* Background color matching the screenshot */
+    color: #ffffff; /* Text color */
+}
+
+/* Content inside the introduction section */
+.content {
+    max-width: 600px; /* Limit the width of the text content */
+}
+
+/* Heading style */
+h1 {
+    font-size: 3em; /* Large font size for the main heading */
+    font-weight: bold; /* Bold font */
+    margin-bottom: 20px; /* Space below the heading */
+    line-height: 1.2; /* Adjust line height for better readability */
+    color: #ffffff; /* Font color for the heading */
+}
+
+/* Paragraph style */
+p {
+    font-size: 1.25em; /* Increase font size for better readability */
+    line-height: 1.8; /* Increase line height for readability */
+    color: #cccccc; /* Font color for the paragraphs */
+    margin-bottom: 30px; /* Space below the paragraph */
+}
+
+/* Container for author details */
+.author-container {
+    display: flex; /* Align avatar and info in a row */
+    align-items: center; /* Vertically center the avatar and text */
+    margin-top: 20px; /* Space above the author info */
+}
+
+
+/* Style for the author info text */
+.author-info {
+    display: flex;
+    flex-direction: column; /* Stack the text vertically */
+}
+
+/* Individual styles for author details */
+.author-name {
+    font-size: 1em; /* Set font size for author name */
+    font-weight: bold; /* Bold font for author name */
+    margin-bottom: 5px; /* Space between name and time */
+    color: #ffffff; /* Font color for the author name */
+}
+
+.author-time {
+    font-size: 0.9em; /* Slightly smaller font size for the time */
+    color: #aaaaaa; /* Grey color for the time text */
+}
+
+/* Style for the galaxy image container */
+.galaxy-image {
+    max-width: 45%; /* Adjust the width of the galaxy image */
+    margin-left: 40px; /* Space between text and image */
+}
+
+/* Style for the galaxy image itself */
+.galaxy-image img {
+    width: 100%; /* Adjust the width to fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+
+
+/* General Section Styling */
+#science {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Content Area Styling */
+#science .content {
+    flex: 1;
+    max-width: 50%;
+}
+
+/* Section Header Styling */
+#science h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout for Boxes */
+.box-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Box Styling */
+.box {
+    background-color: #2c2c2c;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Number Circle Styling */
+.box-number {
+    background-color: #a80000;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    font-size: 1.2em;
+}
+
+/* Box Title Styling */
+.box h3 {
+    margin-top: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Box Paragraph Styling */
+.box p {
+    margin-top: 15px;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+/* Style for the galaxy image container */
+.sun-image {
+    max-width: 45%; /* Adjust the width of the galaxy image */
+    margin-left: 40px; /* Space between text and image */
+}
+
+/* Style for the galaxy image itself */
+.sun-image img {
+    width: 100%; /* Adjust the width to fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* General Section Styling */
+#importance {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Container for Content */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Section Header Styling */
+#importance h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Boxes */
+.box-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Box Styling */
+.box {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 30%;
+    text-align: left;
+}
+
+/* Box Title Styling */
+.box h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Box Paragraph Styling */
+.box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box {
+        max-width: 100%;
+    }
+}
+
+
+
+/* General Section Styling */
+#solar-flare-data {
+    background-color: #000000; /* Black background for the whole section */
+    color: white;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Content Container */
+.data-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Header */
+#solar-flare-data h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Layout Grid */
+.data-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Image Container */
+.data-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Data Boxes */
+.data-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Individual Data Box Styling */
+.data-box {
+    background-color: #b31b1b; /* Red background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.data-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff; /* White text */
+}
+
+.data-box p {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #f0f0f0; /* Slightly off-white text */
+}
+
+.data-box:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .data-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .data-boxes {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* General Section Styling */
+#tools {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Container for Content */
+.tools-content-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section Header Styling */
+#tools h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* List Layout for Tools */
+.tools-list {
+    list-style-type: disc; /* Changes the list style to bullets */
+    padding-left: 40px; /* Indentation for bullets */
+    margin: 0;
+}
+
+/* List Item Styling */
+.tools-list li {
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #ddd; /* Slightly lighter color for readability */
+}
+
+
+
+h2 {
+    font-size: 2rem;
+}
+
+p, ul {
+    font-size: 1.2rem;
+}
+
+#explore {
+    background-color: #1c1c1c; /* Dark background similar to space or a control room */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.explore-btn {
+    background-color: #ff4500; /* Vibrant orange-red color for the button */
+    color: #ffffff; /* White text for good contrast */
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.5); /* Adding a glow effect */
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-btn:hover {
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    box-shadow: 0 6px 20px rgba(255, 69, 0, 0.7); /* Enhance the glow effect on hover */
+}
+
+.explore-btn:active {
+    transform: scale(0.98); /* Slightly shrinks the button when clicked */
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}

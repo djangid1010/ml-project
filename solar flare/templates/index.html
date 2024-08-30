@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Flare Forecasting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Solar Flare Forecasting</h1>
+    </header>
+    <main>
+        <section id="introduction" class="intro-section">
+            <div class="content">
+                <h1>Introduction to Solar Flare Forecasting</h1>
+                <p>
+                    Solar flares are powerful bursts of energy from the Sun's atmosphere. They can disrupt radio communications, damage satellites, and even cause power outages on Earth. Understanding and predicting solar flares is crucial for protecting our technological infrastructure and ensuring the safety of astronauts in space.
+                </p>
+                <div class="author-container">
+                    <div class="author-info">
+                        <p class="author-name">by Divya Jangid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="galaxy-image">
+                <img src="{{ url_for('static', filename='images/galaxy.jpg') }}" alt="Galaxy">
+            </div>
+        </section>
+        
+        
+
+        <section id="science">
+            <div class="content">
+                <h2>Understanding the Science of Solar Forecasting</h2>
+                
+                <div class="box-grid">
+                    <div class="box">
+                        <div class="box-number">1</div>
+                        <h3>Data Collection</h3>
+                        <p>Solar forecasting starts with collecting data from satellites and ground-based instruments to monitor the Sun's activity.</p>
+                    </div>
+                    
+                    <div class="box">
+                        <div class="box-number">2</div>
+                        <h3>Data Analysis</h3>
+                        <p>Advanced algorithms analyze the collected data to identify patterns and predict solar events such as flares and coronal mass ejections.</p>
+                    </div>
+                    
+                    <div class="box">
+                        <div class="box-number">3</div>
+                        <h3>Prediction Models</h3>
+                        <p>Using data and analysis, models are created to forecast solar activity and potential impacts on Earth.</p>
+                    </div>
+                    
+                    <div class="box">
+                        <div class="box-number">4</div>
+                        <h3>Communication</h3>
+                        <p>Predictions are communicated to relevant stakeholders to mitigate potential disruptions to technology and infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sun-image">
+                <img src="{{ url_for('static', filename='images/sun.jpg') }}" alt="Solar Flare">
+            </div>
+        </section>
+        
+        
+
+        <section id="importance">
+            <div class="content-container">
+                <h2>The Importance of Accurate Solar Flare Forecasting</h2>
+                <div class="box-grid">
+                    <div class="box">
+                        <h3>Spacecraft Safety</h3>
+                        <p>Solar flares can damage spacecraft electronics and solar panels, putting satellites and astronauts at risk.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Radio Communications</h3>
+                        <p>Solar flares can disrupt radio communications, affecting everything from air traffic control to GPS navigation.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Power Grids</h3>
+                        <p>Intense solar flares can induce geomagnetic storms that can disrupt power grids and cause widespread blackouts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="solar-flare-data">
+            <div class="data-content-container">
+                <h2>Key Data Sources for Solar Flare Monitoring</h2>
+                <div class="data-layout">
+                    <div class="data-image">
+                        <img src="{{ url_for('static', filename='images/monitor.jpg') }}" alt="Monitoring Centers images">
+                    </div>
+                    <div class="data-boxes">
+                        <div class="data-box">
+                            <h3>Solar Dynamics Observatory (SDO)</h3>
+                            <p>SDO is a NASA mission that provides high-resolution images and data on the Sun's activity, including solar flares.</p>
+                        </div>
+                        <div class="data-box">
+                            <h3>Solar and Heliospheric Observatory (SOHO)</h3>
+                            <p>SOHO is a joint mission between NASA and the European Space Agency that provides continuous monitoring of the Sun and its surroundings.</p>
+                        </div>
+                        <div class="data-box">
+                            <h3>Ground-Based Observatories</h3>
+                            <p>Ground-based observatories play a crucial role in monitoring solar activity and providing complementary data to space missions.</p>
+                        </div>
+                        <div class="data-box">
+                            <h3>Space Weather Prediction Centers</h3>
+                            <p>Space weather prediction centers around the world collect and analyze data to forecast solar activity and its potential impacts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+
+        <section id="tools">
+            <div class="tools-content-container">
+                <h2>Tools and Libraries Used</h2>
+                <div class="tools-list">
+                    <div class="tool-box">Pandas</div>
+                    <div class="tool-box">NumPy</div>
+                    <div class="tool-box">Scikit-learn</div>
+                    <div class="tool-box">TensorFlow/PyTorch</div>
+                    <div class="tool-box">Matplotlib and Seaborn</div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="explore">
+            <a href="{{ url_for('predict') }}" class="explore-btn">Explore the Project</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Solar Flare Forecasting Project</p>
+    </footer>
+</body>
+</html>
